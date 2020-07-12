@@ -1,0 +1,22 @@
+{% extends "sale/nav.html"%}
+<!-- {% block content%} -->
+<div class="signup">
+{% if messages %}
+{% for message in messages%}
+<div class="alert alert-danger alert-dissimisable " role="alert">
+  <button class="close" data-dismiss="alert">
+    <small><sup>x</sup></small>
+  </button>
+  {{message}}
+</div>
+
+{% endfor %}
+{% endif %}
+<div class="btn">
+    <a href="{% url 'sale:home' %}">Go To Homepage</a>
+
+</div>
+</div>
+
+<!-- <h1>Your details have been submitted to Debfocus. We will get back to you soon</h1> -->
+<!-- {% endblock %} -->

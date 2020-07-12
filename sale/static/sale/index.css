@@ -1,0 +1,409 @@
+
+
+    #sec1 {
+        grid-column: 1/6;
+        width: 100%;
+        height: 600px;
+        background: url(/static/sale/images/pc_pic.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: -2;
+
+      }
+
+      .slider {
+        margin: auto;
+        height: 100%;
+        overflow: hidden;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+      }
+
+      .slider .slide-container div {
+        width: 20%;
+        float: left;
+      }
+
+      .slider .slide-container {
+        width: 500%;
+        position: relative;
+        margin: 0;
+        left: 0;
+        animation: 50s slidy infinite;
+      }
+
+      @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        10% {
+            left: 0%;
+        }
+
+        12% {
+            left: -100%;
+        }
+
+        22% {
+            left: -100%;
+        }
+
+        24% {
+            left: -200%;
+        }
+
+        34% {
+            left: -200%;
+        }
+
+        36% {
+            left: -300%;
+        }
+
+        46% {
+            left: -300%;
+        }
+
+        48% {
+            left: -400%;
+        }
+
+        58% {
+            left: -400%;
+        }
+
+        60% {
+            left: -300%;
+        }
+
+        70% {
+            left: -300%;
+        }
+
+        72% {
+            left: -200%;
+        }
+
+        82% {
+            left: -200%;
+        }
+
+        84% {
+            left: -100%;
+        }
+
+        94% {
+            left: -100%;
+        }
+
+        96% {
+            left: 0%;
+        }
+
+        100% {
+            left: 0;
+        }
+
+      }
+
+      .slider div div {
+        color: white;
+      }
+
+      .slider div div p {
+        padding: 15%;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+
+      #curve {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+      }
+
+      #curve path {
+        fill: #fff;
+      }
+
+      .socialmedia {
+        position: fixed;
+        font-size: 25px;
+        text-align: right;
+        width: 40px;
+        margin-top: 30px;
+        top: 40%;
+      }
+
+      .socialmedia .facebook {
+        background-color: blue;
+        color: white;
+        height: 40px;
+        padding: 0 15px 0 0;
+
+      }
+
+      .facebook:hover {
+        width: 50px;
+      }
+
+      .socialmedia .twitter {
+        background-color: rgb(77, 77, 165);
+        color: white;
+        height: 40px;
+        padding: 0 10px 0 0;
+      }
+
+      .twitter:hover {
+        width: 50px;
+      }
+
+      .socialmedia .instagram {
+        background-color: rgb(253, 4, 4);
+        color: white;
+        height: 40px;
+        padding: 0 10px 0 0;
+      }
+
+      .instagram:hover {
+        width: 50px;
+      }
+      .container{
+        grid-column: 1/5;
+      }
+      .container section h1 {
+        text-transform: uppercase;
+        font-family: 'fredoka one', cursive;
+      }
+
+      .container section h1 hr {
+        height: 3px;
+        background-color: grey;
+      }
+
+      .container section article h2 {
+        font-family: 'Yeon Sung', cursive;
+        text-transform: capitalize;
+        margin-top: 40px;
+      }
+      .container section article p {
+       background-color: rgb(248, 249, 250);
+       padding: 15px;
+       border-radius: 10px;
+      }
+
+      .container section .about{
+       margin-top: 50px;
+      }
+      .container section .about h2{
+       font-family: 'Yeon Sung',cursive;
+       text-transform: capitalize;
+       text-align: center;
+      }
+
+
+      .about .team{
+        margin-top: 50px;
+        grid-row: 6;
+      }
+
+      .about .mission p {
+        background-color: rgb(144, 198, 200);
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .about .team .container{
+        margin: 30px 0 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+          .chart{
+            display: grid;
+            grid-gap:20px;
+            grid-column: 1/6;
+            grid-row: 8;
+            grid-template-areas:
+            'case case media-content-a'
+            'case case media-content-b';
+          }
+          .case{
+            grid-area:case;
+            min-height:400px;
+            /* background: url(/static/sale/images/sal.png); */
+            background-size:cover;
+            background-position:center;
+            background:var(--light);
+            padding:3rem;
+            display:flex;
+            flex-direction:column;
+            align-items: start;
+            justify-items: center;
+            max-width: 100%;
+            margin-left: 50px;
+            height: auto;
+          }
+
+
+
+          .media-content-a{
+            grid-area:media-content-a;
+            background: rgb(82, 119, 168);
+
+          }
+          .media-content-b{
+            grid-area:media-content-b;
+            background:rgb(0, 170, 236);
+          }
+          .case h1{
+              font-size: 4rem;
+              /* margin-bottom:5px; */
+              color:#2d364c;
+          }
+          .case h1 span{
+            color:orange;
+          }
+          .case p{
+              font-size: 1.2rem;
+              margin-top: -15px;
+              color:var(--dark);
+          }
+
+          .case p span{
+            color:white;
+          }
+          .social div p{
+            background:var(--light);
+            text-align: center;
+            padding: 20px ;
+            border-radius: 10px;
+            margin:0;
+          }
+          .social h2{
+            text-align: center;
+          }
+
+          .social{
+            display:grid;
+            padding:1.5rem;
+            align-items: center;
+            justify-items: center;
+            box-shadow: var(--shadow);
+            border-radius: 15px;
+            width: 70%;
+          }
+a .lik{
+text-decoration: none;
+color: none;
+}
+
+@media(max-width:700px) {
+  .chart{
+    grid-template-areas:
+    'case case'
+    'media-content-a media-content-b';
+  }
+  
+  .case h1{
+    font-size: 2.5rem;
+  }
+  .case p span{
+    color: black;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* .comment{
+            background-color: white;
+            display: flex;
+            grid-column: 1/6;
+            grid-row: 9;
+            margin:0;
+            padding: 20px 40px;
+            box-shadow: var(--shadow);
+
+          }*/
+/*
+          .comment .user-comment{
+            width: 70%;
+            padding: 15px;
+          }
+
+          .comment .user-comment{
+            padding: 10px;
+            text-transform: uppercase;
+          }
+          .comment .user-comment div{
+            padding: 15px;
+            margin: 0 0 10px 0;
+            border-radius: 10px;
+
+          }
+
+          .comment .user-comment .viewname {
+            text-align: right;
+          }
+
+          .comment .commentform {
+            border-radius: 10px;
+            margin: auto 0;
+            box-shadow: -0.1px -0.1px 5px black;
+            padding: 25px;
+          }
+
+
+          .comment .commentform h3 {
+            text-transform: capitalize;
+          }
+
+          .comment .commentform form {
+            margin: 20px 0 0 0;
+          }
+
+          .comment .commentform .comname {
+            width: 300px;
+            height: 100px;
+            border-radius: 15px;
+            padding: 10px;
+          }
+
+          :focus {
+            outline: none;
+          }
+
+          .comment .commentform .username {
+            width: 300px;
+            height: 20px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: -0.1px -0.1px 2px black;
+            padding: 10px;
+          }
+
+          .comment .commentform .submit {
+            width:100px;
+            background: #2d364c;
+            color:var(--light);
+            padding:0.6rem 1.3rem;
+            text-decoration:none;
+            margin-top:20px;
+            border-style: none;
+            text-transform: uppercase;
+            cursor: pointer;
+
+          } */

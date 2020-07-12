@@ -1,0 +1,186 @@
+
+@media(max-width:850px)and (min-width:600px){
+
+   /* .contact{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      margin-top: 90px; 
+      overflow: hidden;   
+
+  }*/
+.btn a{
+  background: #2d364c;
+  color:var(--light);
+  padding:0.8rem 2.0rem;
+  text-decoration:none;
+  border:0;
+  text-align: center;
+  font-size: medium;
+  cursor: pointer;
+  float:left;
+}
+
+
+} 
+
+/*
+.contact{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+ 
+
+ .contact-head {
+  
+    background: #f1f1f1; 
+    text-align: center;
+
+} 
+
+
+.call{
+  text-align: center;
+  padding:20px 50px;
+  margin-bottom: 20px;
+  background-color: rgb(144, 198, 200);
+
+
+} 
+.contact{
+  display: flex;
+  margin-top: 90px;
+
+ 
+  
+  }
+  .contact div{
+    padding: 20px 50px;
+    width:90%;
+  }
+
+.call{
+  text-align: center;
+   padding: 20px 50px;
+  margin-bottom: 20px;
+  background-color: rgb(144, 198, 200);
+}
+
+.contact-head. h2{
+  
+  background: #f1f1f1; 
+  text-align: center;
+  height: 20px;
+
+}  */
+
+ul{
+  list-style: none;
+}
+
+
+.login{
+  padding: 50px 30px;
+  width: 70%;
+  margin: auto;
+}
+
+form div input {
+  width: 300px;
+  padding: 15px;
+  margin-bottom:20px ;
+  background: var(--light);
+  border: 1px solid rgba(128, 128, 128, 0.692);
+  border-radius: 7px;
+}
+
+
+.btn button {
+  background: #2d364c;
+  color:var(--light);
+  padding:0.8rem 2.0rem;
+  text-decoration:none;
+  border:0;
+  text-align: center;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.btn a{
+  background: #2d364c;
+  color:var(--light);
+  padding:0.8rem 2.0rem;
+  text-decoration:none;
+  border:0;
+  text-align: center;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.btn a:hover{
+  background: var(--light);
+  border:0.5px solid green;
+  color: var(--dark);
+  text-decoration: none;
+}
+.signup{
+display:grid;
+grid-column: 2/3;
+
+}
+
+input[type=text], input[type=password], input[type=email]{
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+background-color: white;
+outline: none;
+}
+
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+textarea {
+margin-bottom: 30px;
+border-radius: 7px;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+
+}
+
+.payment{
+margin: 20px 0;
+widows: 10px;rem;
+  padding:7px 15px;
+  background: var(--light);
+  border-radius: 5px;
+  border:1px solid rgb(82, 119, 168);
+}
+.card-body {
+  background: rgb(144, 198, 200);
+}
+
+.card-deck{
+  grid-column:1/4 ;
+  /* grid-row:4/8; */
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}

@@ -1,0 +1,59 @@
+{% extends "sale/nav.html"%}
+{% block content %}
+<!-- {% include 'sale/sidebar.html' %} -->
+
+
+  <!-- Register -->
+<section class="signup">
+    <div>
+       <h1>Sign Up</h1>
+    </div>
+    <div>
+       <p>Please fill in this form to create an account in order to use DebSale.</p>
+       <a href="{% url 'sale:about' %}">Click here to know about DebSale</a>
+       <hr>
+    </div>
+   <form method="POST">
+    {% csrf_token %}
+       <div>
+           <label for="compname">Company Name</label>
+           <input class="request" id="compname" type="text" name="company_name" placeholder="Enter company name" required>
+       </div>
+       <div>
+           <!-- <label for="description">Description</label> -->
+           <p>Description</p>
+           <textarea name="description" rows="10" cols="40" placeholder="Company Description"></textarea>
+           <!-- <input id="description" type="textarea" name="description"> -->
+       </div>
+      
+       <div>
+           <label for="owner">Owner Username</label>
+           <input id="owner" class="request"  type="text" name="owner" placeholder="Enter Username" required>
+       </div>
+       <div>
+           <label for="owner-password">Owner Password</label>
+           <input class="request" id="owner-password" type="password" name="password" placeholder="Enter password" required>
+       </div>
+       <div>
+           <label for="phone">Phone</label>
+           <input class="request" id="phone" type="tel" name="phone" placeholder="Enter Phone number" required>
+       </div>
+       <div>
+           <label for="email">Email</label>
+           <input class="request" id="email" type="email" name="email" placeholder="Enter email" required>
+
+       </div>
+       <div id="validate">      <a href="{% url 'sale:contact' %}">Contact Us Before making payments</a>
+       </div>
+       <div id="pay">
+        <a href="https://flutterwave.com/pay/debfocustt9i">Make Payments</a>   
+       </div>  
+
+   <div class="btn">
+       <button type="submit">Submit</button>
+   </div>  
+       
+</form>
+
+</section> 
+{% endblock%}

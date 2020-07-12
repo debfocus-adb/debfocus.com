@@ -1,0 +1,42 @@
+{% extends "sale/nav.html"%}
+{% block content%}
+<!-- {% include 'sale/sidebar.html' %} -->
+
+
+<!-- Reporting -->
+<section class="signup">
+    <div>
+       <h1>Make Report</h1>
+       <p>Please fill in this form to submit report.</p>
+       <hr>
+    </div>
+   <form method="POST">
+    {% csrf_token %}
+       <div>
+           <label for="compname">Company Name</label>
+           <input class="request" id="compname" type="text" name="name" placeholder="Enter company name" required>
+       </div>
+      
+      
+       <div>
+           <label for="phone">Phone</label>
+           <input class="request" id="phone" type="tel" name="phone" placeholder="Enter Phone number" required>
+       </div>
+       <div>
+           <label for="email">Email</label>
+           <input class="request" id="email" type="email" name="email" placeholder="Enter email" required>
+
+       </div>
+       <div>
+           <p>Report</p>
+           <textarea name="statement" rows="10" cols="40" placeholder="Report"></textarea>
+       </div>
+       
+
+   <div class="btn">
+       <button type="submit">Submit</button>
+   </div>  
+       
+</form>
+</section>  
+{% endblock%}

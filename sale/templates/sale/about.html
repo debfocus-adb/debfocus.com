@@ -1,0 +1,98 @@
+{% extends "sale/nav.html"%}
+{% block content%}
+{% load static %}
+<!-- {% include 'sale/sidebar.html' %} -->
+
+<div class="card-deck signup">
+    <div class="card">
+
+      <img class="card-img-top" src="{% static 'sale/images/loggo.jpeg' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Company Info</h5>
+        <p class="card-text">
+
+          Debfocus, we are here to  provide the best IT services such as<br>
+          <i>Cloud computing, Web applications, Database management system and cybersecurity services</i>.
+          Contact Us to know more
+      </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><div class="btn"><a href="{% url 'sale:contact' %}"> Contact Us</a></div></small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="{% static 'sale/images/deb.png' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">DebSale</h5>
+        <p class="card-text">Debsale is an online management platform that helps industries to keep track of all resources within different shops.
+          You can start using our sales application for management of shops, warehouses with the owner, admin and worker priviledges. 
+          You can go to our registration page to start the process</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><div class="btn"><a href="{% url 'sale:register' %}"> Start Using Now</a></div></small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="{% static 'sale/images/juliana.png' %}" alt=" image cap">
+      <div class="card-body">
+        <h5 class="card-title">Other Products</h5>
+        <p class="card-text">A satisfied customer with our works. A website for patients to read and know more about a <cite>Juliana's Holistic Health Service</cite></p>
+
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><div class="btn"><a href="#"> Visit Website</a></div></small>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- About Section -->
+<!-- <div class="contact">
+
+    <div class="individual" id="box-1">
+        <div class="contact-head input">
+            <h1>Company Information</h1>
+        </div>
+            <div class="call">
+<p>que dignissimos odit! You can start using our sales application for management of shops, warehouses with the owner, admin and worker priviledges.
+
+            You can go to our registration page to start the process</p>                <div class="btn">
+                    <a href="{% url 'sale:register' %}"> Start Now</a>
+                </div>
+            </div>
+    </div>
+
+
+<div class="individual" id="box-2">
+        <div class="contact-head input">
+            <h2>DebSales</h2>
+        </div>
+        <div class="call">
+            <p>que dignissimos odit! You can start using our sales application for management of shops, warehouses with the owner, admin and worker priviledges.
+
+            You can go to our registration page to start the process</p>
+            <div class="btn">
+                <a href="{% url 'sale:register' %}"> Start Now</a>
+            </div>
+        </div>
+
+</div>
+
+ <div class="individual" id="box-3">
+        <div class="contact-head input">
+            <h1>App Details</h1>
+        </div>
+        <div class="call">
+            <p>que dignissimos odit! You can start using our sales application for management of shops, warehouses with the owner, admin and worker priviledges.
+                You can go to our registration page to start the process</p>
+                <div class="btn">
+                <a href="{% url 'sale:register' %}"> Start Now</a>
+            </div>
+        </div>
+</div>
+
+    </div> -->
+
+    {% endblock%}

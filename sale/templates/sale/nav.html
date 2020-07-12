@@ -1,0 +1,74 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>DebFocus</title> -->
+    <link rel="stylesheet" href="{% static 'sale/main.css'%}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'sale/index.css'%}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'sale/contact.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sale/responsive.css'%}" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{%static 'sale/images/debbfocus_badge.png'%}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Fredoka+One|Yeon+Sung&display=swap" rel="stylesheet">
+   
+    {% if title%}
+        <title>Debfocus - {{title}}</title>
+    {% else%}
+        <title>Debfocus </title>
+    {% endif%}
+  
+  
+  </head>
+  <body>
+
+<div class="wrapper">
+  <!-- TOP -->
+  <section class="top">
+  
+
+
+          <!-- login button on head -->
+        <!-- <div > -->
+          <!-- <div class="Brand"> -->
+            <img class="Brand" src="{% static 'sale/images/debbfocus_badge.png'%}">D<span>&#9776</span>BFOCUS
+           <div class="redirect" id="navv"> 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <!-- <span><i class="fa fa-bars"></i></span> -->
+              <!-- <img src="https://img.icons8.com/fluent/48/000000/menu--v1.png"/> -->
+<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCB4MT0iODcuNDkwMDgiIHkxPSI2MS44MzkwOCIgeDI9IjEzNi4yODA0MiIgeTI9IjExMC42Mjk0MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci0xX1JkcDNBeWRMRlkyQV9ncjEiPjxzdG9wIG9mZnNldD0iMC4yMzciIHN0b3AtY29sb3I9IiMzYjNiM2IiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjAuODUiIHN0b3AtY29sb3I9IiMyZTJlMmUiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iODcuNDkwMDgiIHkxPSI4Ny40OTAwOCIgeDI9IjEzNi4yODA0MiIgeTI9IjEzNi4yODA0MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci0yX1JkcDNBeWRMRlkyQV9ncjIiPjxzdG9wIG9mZnNldD0iMC4yMzciIHN0b3AtY29sb3I9IiMzYjNiM2IiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjAuODUiIHN0b3AtY29sb3I9IiMyZTJlMmUiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iODcuNDkwMDgiIHkxPSIxMTMuMTQxMDgiIHgyPSIxMzYuMjgwNDIiIHkyPSIxNjEuOTMxNDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItM19SZHAzQXlkTEZZMkFfZ3IzIj48c3RvcCBvZmZzZXQ9IjAuMjM3IiBzdG9wLWNvbG9yPSIjM2IzYjNiIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIwLjg1IiBzdG9wLWNvbG9yPSIjMmUyZTJlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSIiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PHBhdGggZD0iTTExMywxNzguNTRjLTM2LjE5Njc0LDAgLTY1LjU0LC0yOS4zNDMyNiAtNjUuNTQsLTY1LjU0djBjMCwtMzYuMTk2NzQgMjkuMzQzMjYsLTY1LjU0IDY1LjU0LC02NS41NHYwYzM2LjE5Njc0LDAgNjUuNTQsMjkuMzQzMjYgNjUuNTQsNjUuNTR2MGMwLDM2LjE5Njc0IC0yOS4zNDMyNiw2NS41NCAtNjUuNTQsNjUuNTR6IiBmaWxsPSIjY2NjY2NjIj48L3BhdGg+PGc+PHBhdGggZD0iTTE1My42MTQwOCw5My43NjE3NWgtODEuMjI4MTdjLTIuMzUxMzQsMCAtNC4yNzUxNywtMS45MjM4MyAtNC4yNzUxNywtNC4yNzUxN3YtNC4yNzUxN2MwLC0yLjM1MTM0IDEuOTIzODIsLTQuMjc1MTcgNC4yNzUxNywtNC4yNzUxN2g4MS4yMjgxN2MyLjM1MTM0LDAgNC4yNzUxNywxLjkyMzgzIDQuMjc1MTcsNC4yNzUxN3Y0LjI3NTE3YzAsMi4zNTEzNCAtMS45MjM4Miw0LjI3NTE3IC00LjI3NTE3LDQuMjc1MTd6IiBmaWxsPSJ1cmwoI2NvbG9yLTFfUmRwM0F5ZExGWTJBX2dyMSkiPjwvcGF0aD48cGF0aCBkPSJNMTUzLjYxNDA4LDExOS40MTI3NWgtODEuMjI4MTdjLTIuMzUxMzQsMCAtNC4yNzUxNywtMS45MjM4MyAtNC4yNzUxNywtNC4yNzUxN3YtNC4yNzUxN2MwLC0yLjM1MTM0IDEuOTIzODIsLTQuMjc1MTcgNC4yNzUxNywtNC4yNzUxN2g4MS4yMjgxN2MyLjM1MTM0LDAgNC4yNzUxNywxLjkyMzgyIDQuMjc1MTcsNC4yNzUxN3Y0LjI3NTE3YzAsMi4zNTEzNCAtMS45MjM4Miw0LjI3NTE3IC00LjI3NTE3LDQuMjc1MTd6IiBmaWxsPSJ1cmwoI2NvbG9yLTJfUmRwM0F5ZExGWTJBX2dyMikiPjwvcGF0aD48cGF0aCBkPSJNMTUzLjYxNDA4LDE0NS4wNjM3NWgtODEuMjI4MTdjLTIuMzUxMzQsMCAtNC4yNzUxNywtMS45MjM4MyAtNC4yNzUxNywtNC4yNzUxN3YtNC4yNzUxN2MwLC0yLjM1MTM0IDEuOTIzODIsLTQuMjc1MTcgNC4yNzUxNywtNC4yNzUxN2g4MS4yMjgxN2MyLjM1MTM0LDAgNC4yNzUxNywxLjkyMzgyIDQuMjc1MTcsNC4yNzUxN3Y0LjI3NTE3YzAsMi4zNTEzNCAtMS45MjM4Miw0LjI3NTE3IC00LjI3NTE3LDQuMjc1MTd6IiBmaWxsPSJ1cmwoI2NvbG9yLTNfUmRwM0F5ZExGWTJBX2dyMykiPjwvcGF0aD48L2c+PHBhdGggZD0iIiBmaWxsPSJub25lIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4="/>            <a class="upper " href="{% url 'sale:home' %}">Home</a>
+            <a class="upper" href="{% url 'sale:about' %}">About</a>
+            <a class="upper" href="{% url 'sale:contact' %}">Contact</a>
+            <a class="upper" href="{% url 'sale:register' %}">Register</a>
+            <a class="upper" href="{% url 'sale:report' %}">Make Report</a>
+          </div>
+        <!-- </div> -->
+        
+    </section>
+
+   
+{% block content%}
+
+{% endblock content%}
+
+    <div class="last">
+        <p>&copy; copyright 2020</p>
+
+    </div>
+      <!-- End Of Wrapper-->
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.querySelector("#navv");
+          if (x.className === "redirect") {
+            x.className += " responsive";
+          } else {
+            x.className = "redirect";
+          }
+        }
+        </script>
+      </body>
+      </html>
